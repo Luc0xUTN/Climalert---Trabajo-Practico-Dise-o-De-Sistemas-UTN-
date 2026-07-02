@@ -1,0 +1,77 @@
+@startuml
+
+left to right direction
+
+rectangle "Entidades de Dominio" {
+    class Contacto
+    {
+        - email : String
+        - criterio : Criterio
+    }
+
+    Contacto --> Criterio
+
+    class Criterio
+    {
+        - temperatura : float
+        - humedad : float
+        + cumple(clima : Clima) : bool
+    }
+
+
+    class Alerta
+    {
+        - contacto : Contacto
+        - clima : Clima
+    }
+
+    Alerta --> Clima
+    Alerta --> Contacto
+
+    class Clima
+    {
+        - actualizacion : Date
+        - temperatura : float
+        - humedad : float
+    }
+
+}
+class WeatherAPI extends ClimaAdapter
+{
+    + obtenerClimaActual() : Clima
+}
+
+interface ClimaAdapter
+{
+    + obtenerClimaActual() : Clima
+}
+
+class Metorologo
+{
+    - clima : ClimaAdapter
+    + obtenerClimaActual() : Clima
+}
+Metorologo ...> Clima
+Metorologo --> ClimaAdapter
+
+Notificador ...> Contacto
+
+class Notificador
+{
+    - sender : SenderAdapter
+    + enviar(contacto : Contacto) : void
+}
+
+Notificador --> SenderAdapter
+
+interface SenderAdapter
+{
+    + enviar(contacto : Contacto) : void
+}
+
+class SendgridSender extends SenderAdapter
+{
+    + enviar(contacto : Contacto) : void
+}
+
+@enduml
