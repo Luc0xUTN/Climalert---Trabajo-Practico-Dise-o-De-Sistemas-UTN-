@@ -21,6 +21,7 @@ rectangle "Entidades de Dominio" {
 
     class Alerta
     {
+        - timestamp : Instant
         - contacto : Contacto
         - clima : Clima
     }
@@ -36,7 +37,7 @@ rectangle "Entidades de Dominio" {
     }
 
 }
-class WeatherAPI extends ClimaAdapter
+class WeatherAPI implements ClimaAdapter
 {
     + obtenerClimaActual() : Clima
 }
@@ -69,7 +70,7 @@ interface SenderAdapter
     + enviar(contacto : Contacto) : void
 }
 
-class SendgridSender extends SenderAdapter
+class SendgridSender implements SenderAdapter
 {
     + enviar(contacto : Contacto) : void
 }
