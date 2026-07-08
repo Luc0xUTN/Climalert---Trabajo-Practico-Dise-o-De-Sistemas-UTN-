@@ -19,6 +19,7 @@
 /home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/schedules/ClimaSchedule.java
 /home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/services/AlertasService.java
 /home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/services/ClimaService.java
+/home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/services/ContactosLoader.java
 /home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/services/impls/AlertasServiceImpl.java
 /home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/services/impls/ClimaServiceImpl.java
 /home/luc0x/Desktop/DEV/Java/Climalert---Trabajo-Practico-Dise-o-De-Sistemas-UTN-/src/main/java/com/utn/ba/ddsi/climaalertapi/services/meteorologia/MeteorologiaApiAdapter.java

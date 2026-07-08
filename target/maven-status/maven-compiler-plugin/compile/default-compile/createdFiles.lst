@@ -10,6 +10,7 @@ com/utn/ba/ddsi/climaalertapi/repositories/ClimaRepository.class
 com/utn/ba/ddsi/climaalertapi/domain/Criterio.class
 com/utn/ba/ddsi/climaalertapi/dtos/weather/WeatherAPI/ResponseCurrentWeather.class
 com/utn/ba/ddsi/climaalertapi/services/meteorologia/Meteorologo.class
+com/utn/ba/ddsi/climaalertapi/services/ContactosLoader.class
 com/utn/ba/ddsi/climaalertapi/services/notificaciones/SendgridSender.class
 com/utn/ba/ddsi/climaalertapi/domain/Alerta.class
 com/utn/ba/ddsi/climaalertapi/configs/RestClientConfig.class
